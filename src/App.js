@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
 
+/*
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <span>Proyecto de react</span>
         </p>
         <a
           className="App-link"
@@ -20,6 +22,11 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
+const App = () => <Fragment>
+  <h1>Nuevo Titulo</h1>
+  <img src={logo} className="App-logo" alt="logo" />
+
+  </Fragment>
 export default App;
