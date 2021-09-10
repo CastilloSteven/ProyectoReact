@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import NuevoElemento from './NuevoElemento';
 import Header from './Header';
 import Footer from './Footer';
+import Estudiante from './Estudiante';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,9 +17,16 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <NuevoElemento />
+    <NuevoElemento nombre = "nombrePropiedad" otro = "otroValor" />
   </React.StrictMode>,
   document.getElementById('root2')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Estudiante  edad = "23" genero = "F"/>
+  </React.StrictMode>,
+  document.getElementById('root3')
 );
 
 ReactDOM.render(

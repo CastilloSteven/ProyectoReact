@@ -1,9 +1,18 @@
 import React from "react";
 
-const NuevoElemento = () => (
-    <div>
-        <h3>Titulo nuevo componente</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laudantium eveniet commodi est nobis voluptates dignissimos perferendis et voluptatum accusantium quos rerum, eligendi minus obcaecati tempore quidem. Quam, perspiciatis quo.</p>
+let Estudiante = {
+    nombre: "maria",
+    edad: 23
+}
+
+var color = "azul";
+
+const NuevoElemento = (props) => (
+    <div className="container">
+        <h3>Estudiante</h3>
+        <h4>{ props.nombre }</h4>
+        <p>Edad: { Estudiante.edad } </p>
+        <span>{ color }</span>
     </div>
 )
 
