@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Estudiante = ({nombre, edad, genero}) => (
     <div className="card">
@@ -11,5 +12,15 @@ const Estudiante = ({nombre, edad, genero}) => (
         </div>
     </div>
 );
+
+Estudiante.propTypes = {
+    nombre: PropTypes.string,
+    edad: PropTypes.number,
+    genero: PropTypes.string
+}
+
+Estudiante.defaultProps = {
+    nombre: "no tiene nombre"
+}
 
 export default Estudiante;
