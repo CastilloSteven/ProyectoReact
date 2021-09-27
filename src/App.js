@@ -1,6 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import { Fragment } from 'react';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import Contenedor from './Contenedor';
+import Contacto from './Contacto';
+import Header from './Header';
+
 
 /*
 function App() {
@@ -24,9 +27,15 @@ function App() {
   );
 }*/
 
-const App = () => <Fragment>
-  <h1>Nuevo Titulo</h1>
-  <img src={logo} className="App-logo" alt="logo" />
+const App = () => (
+  <Router>
+    <Route path="/" exact component={ Header }/>
+    <Route path="/estudiantes" exact component={ Contenedor }/>
+    <Route path="/contacto" exact component={ Contacto }/>
+  </Router>
 
-  </Fragment>
+)
+
+
+
 export default App;
