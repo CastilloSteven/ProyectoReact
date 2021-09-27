@@ -4,12 +4,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 import Footer from './Footer';
-import Estudiante from './Estudiante';
+import Contenedor from './Contenedor';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Estudiante  edad = "23" genero = "F"/>
+    <Contenedor />
   </React.StrictMode>,
   document.getElementById('contentMain')
 );
